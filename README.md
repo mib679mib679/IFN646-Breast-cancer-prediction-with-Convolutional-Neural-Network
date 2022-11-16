@@ -56,5 +56,3 @@ The mammography are obtained from CBIS-DDSM(Curated Breast Imaging Subset of DDS
 - tensorflow==2.10.0
 - sklearn==1.1.3
 - tensorflow.keras==2.10.0
-
-
