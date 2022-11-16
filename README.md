@@ -1,4 +1,4 @@
-# Breast Cancer Mammogrammphy Using VGG CNN Model and Techniques
+# Breast Cancer Mammogrammphy Using CNN Model and Techniques
 
 Rerpot Dissertation for the Master of Information Technology (IFN646 Biomedical Data Science) at the Queensland University of Technology (2022).
 
