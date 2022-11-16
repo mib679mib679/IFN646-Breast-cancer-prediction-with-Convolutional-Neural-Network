@@ -7,7 +7,7 @@ The final report can be read and download here: [Breast Cancer Mammogrammphy Cla
 
 ## Abstract
 
-Deep learning-based neural network advances made recently in biological image processing might be used to increase the efficiency of Computer Aided Diagnosis (CAD) systems. An overview of the most current cutting-edge deep learning-based CAD systems created for mammography and breast histopathology pictures is provided, considering the significance of breast cancer globally and the promising outcomes reported by VGG back propagation-based approach in breast imaging. The study describes how well a mammographic imaging can forecast a positive patient for breast cancer while considering the breast tissue textural characteristics such as energy, contrast, correlation, and other texture descriptors at each pixel. The VGG Neural Network Model, which we suggest as a computer-based method to modelling breast cancer, classifies the image as either normal tissue, Benign or Malignant tumour. We reached an accuracy of nearly 65% for the VGG-Neural Network model on the given test set and the model was found to be a good fit for classification. 
+Deep learning-based neural network advances made recently in biological image processing might be used to increase the efficiency of Computer Aided Diagnosis (CAD) systems. An overview of the most current cutting-edge deep learning-based CAD systems created for mammography and breast histopathology pictures is provided, considering the significance of breast cancer globally and the promising outcomes reported by back propagation-based approach in breast imaging. The study describes how well a mammographic imaging can forecast a positive patient for breast cancer while considering the breast tissue textural characteristics such as energy, contrast, correlation, and other texture descriptors at each pixel. The convolutional Neural Network, which we suggest as a computer-based method to modelling breast cancer, classifies the image as either normal tissue, Benign or Malignant tumour. We reached an accuracy of nearly 65% for the model on the given test set and the model was found to be a good fit for classification. 
 
 
 ## Acknowledgments
@@ -27,20 +27,15 @@ However, the biggest cause is lack of awareness, treatment and screening methods
 The DDSM (Digital Database for Screening Mammography) dataset is one of the most famous databases for breast mammographic research. It is a resource popularly used by the entire mammographic image analysis research community. Primary support for this project was a grant from the Breast Cancer Research Program of the U.S. Army Medical Research and Materiel Command. The Massachusetts General Hospital, the University of South Florida, and Sandia National Laboratories have also contributed. Additional cases were provided from Washington University School of Medicine. The dataset contains nearly 2500 studies with 12 volumes of normal images, containing 695 cases; 15 volumes of cancerous, containing 855 cases; 14 volumes benign, containing 870 cases; and 2 volumes of benign without callback, containing 141 cases.
 
 
-## Proposed VGG style conventional neural network
+## Proposed VGG-architecture conventional neural network
 
-VGG Neural Networks. In most cases, it alludes to a deep convolutional network for object identification that performed exceptionally well on the ImageNet dataset. Currently it is the most capable model for object detection. Key features include using ReLU activation function in-place of tanh function, optimization for multiple GPU’s and overlapping pooling. Also, it does address overfitting by using data augmentation. It also improved the traditional CNN model on training image data.
+Convolutional Neural Network. In most cases, it alludes to a deep convolutional network for object identification that performed exceptionally well on the ImageNet dataset. Currently it is the most capable model for object detection. Key features include using ReLU activation function in-place of tanh function, optimization for multiple GPU’s and overlapping pooling. Also, it does address overfitting by using data augmentation. It also improved the traditional CNN model on training image data.
 
 
 ### GRADCAM
 
 In general, we start with a picture as our input and build a model that is stopped at the layer for which we wish to build a Grad-CAM heat-map. For prediction, we affix the completely linked layers. The model is then applied to the input before the layer output and loss are collected. The gradient of the output of our chosen model layer with respect to the model loss is then determined. To overlay the heat-map with the original picture, we next take portions of the gradient that contribute to the prediction and decrease, resize, and rescale them.
 
-
-## Gradient based saliency maps
-
-They are a well-liked visualisation technique for understanding why a deep learning network chose a particular action, like categorising an image. The gradient expresses how much a variable may influence the outcome of another variable.
-Saliency maps are typically shown as heatmaps, with hotness corresponding to regions with a significant influence on the model's choice.
 
 ## Method 
 
